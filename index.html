@@ -54,21 +54,21 @@
 
 <body>
     <!-- header section -->
-   <header class="sticky top-0 backdrop-blur-3xl">
-    <div class="py-7 flex items-center justify-around">
+   <header class="sticky top-0">
+    <div class="py-7 flex items-center justify-around bg-yellow-50">
         <div class="">
           <a href="blog.html">
             <button id="btn-blog"
             class="btn rounded-lg bg-primary text-black text-center">
             Blog</button></a>
         </div>
-        <div class="flex gap-2 items-center">
+        <div class="flex gap-2 items-center ">
           <img src="assets/logo.png" alt="logo" />
           <h2><b>Donate Bangladesh</b></h2>
         </div>
         <div class="flex gap-2 items-center">
           <img src="assets/coin.png" alt="coin" />
-          <p>5500 BDT</p>
+          <p id="main-balance">5500 BDT</p>
         </div>
     </div>
     <!-- Donate & History Button -->
@@ -241,20 +241,20 @@
             </div>
         </div>
     </section>
+  </main>
 
 
       <!-- history-section -->
-      <div id="history-section" class="w-8/12 mx-auto my-16 hidden">
-        <!-- <div class="border-2 border:rgba(17, 17, 17, 0.1) rounded-3xl p-8">
-          <h3 class="text-txtpPrimary">
-            96500 Taka is Donated for famine-2024 at Feni, Bangladesh
-          </h3>
-          <p class="text-txtSecondary">
-            Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)
-          </p>
-        </div> -->
-      </div>
-    </main>
+      <section class="mt-10 hidden" id="history-section">
+        <main class="md:w-8/12 p-2 md:mx-auto">
+          <div
+            id="transaction-container"
+            class="border-gray-400 border shadow-lg rounded">
+            <h1 class="text-xl text-center my-2">Money Transaction History</h1>
+          </div>
+        </main>
+      </section>
+    
     <script src="js/donate.js"></script>
     <script src="js/function.js"></script>
 
